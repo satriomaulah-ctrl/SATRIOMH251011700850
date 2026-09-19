@@ -34,7 +34,7 @@
                         <p class="card-text"><strong>Email:</strong> {{ $mahasiswa['email'] }}</p>
                         <p class="card-text"><strong>Kampus:</strong> {{ $mahasiswa['kampus'] }}</p>
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
     </div>
