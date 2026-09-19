@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ asset('bootstrap-5.3.8-dist/css/bootstrap.min.css') }}">
     <script src="{{ asset('bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js') }}"></script>
 </head>
+<! -- Body --!>
 
 <body class="bg-light d-flex flex-column min-vh-100">
     <nav class="navbar navbar-dark bg-primary shadow-sm mb-4">
