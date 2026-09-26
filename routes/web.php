@@ -1,19 +1,17 @@
 <?php
 
+use App\Http\Controllers\MahasiswaController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('page.home');
 });
 
-Route::get('/mahasiswa', function () {
-    $mahasiswa = [
-        'status' => 'Aktif',
-        'nama' => 'Satrio Maula Hafiz',
-        'nim' => '2510114013',
-        'prodi' => 'sistem informasi',
-        'email' => 'satriohafiz0307@gmail.com',
-        'kampus' => 'Universitas Pamulang',
-    ];
-    return view('mahasiswacontroler', compact('mahasiswa'));
+Route::get('/profile', [MahasiswaController::class, 'index']);
+
+Route::get('/about', function () {
+    return view('page.about');
 });
+
+
+    

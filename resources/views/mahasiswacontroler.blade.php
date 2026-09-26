@@ -15,7 +15,7 @@
         <div class="container">
             <a class="navbar-brand" href="#">UNPAM - Profile Mahasiswa</a>
         </div>
-    </nav>
+    </nav> 
     <div class="container flex-grow-1">
         <div class="row justify-content-center">
             <div class="col-md-6">
