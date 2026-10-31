@@ -31,6 +31,10 @@
         </div>
         @endforeach
     </div>
+
+    <div class="mt-4 d-flex justify-content-center">
+        {{ $projects->links('pagination::bootstrap-5') }}
+    </div>
 </div>
 
 @endsection
