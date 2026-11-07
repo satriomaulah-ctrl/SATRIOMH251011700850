@@ -66,8 +66,8 @@ class ProjectController extends Controller
         $project->update($data);
 
         return redirect()->route('admin.projects.index')
-            ->with('success', 'Project berhasil diupdate');
-    }
+            ->with('success', 'Project berhasil diperbarui');
+            }
 
     public function destroy($id)
     {

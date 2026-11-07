@@ -13,8 +13,13 @@
             <span class="navbar-brand fw-bold">SISTEM INFORMASI</span>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="{{ route('admin.dashboard') }}">Dashboard</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Logout</a></li>
-            </ul>
+                   <li class="nav-item">
+       <form action="{{ route('logout') }}" method="POST" class="d-inline">
+           @csrf
+           <button type="submit" class="nav-link btn btn-link">Logout</button>
+       </form>
+   </li>
+</ul>
         </div>
     </nav>
 
