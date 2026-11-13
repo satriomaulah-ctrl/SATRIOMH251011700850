@@ -13,6 +13,9 @@ Route::get('/', function () {
 
 Route::get('/profile', [MahasiswaController::class, 'index']);
 
+// Cetak PDF (HARUS di atas resource project)
+Route::get('/project/cetak-pdf', [ProjectController::class, 'cetakPdf'])->name('project.cetak-pdf');
+
 // Halaman publik: cuma lihat daftar dan detail
 Route::resource('project', ProjectController::class)->only(['index', 'show']);
 
